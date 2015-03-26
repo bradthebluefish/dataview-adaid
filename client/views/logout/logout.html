@@ -1,0 +1,77 @@
+<template name="Logout">
+	<div class="page-container container" id="content">
+		<div class="row" id="title_row">
+			<div class="col-md-12">
+				<div id="page_menu" class="pull-right">
+				</div>
+			</div>
+		</div>
+		{{> LogoutView}}
+	</div>
+</template>
+
+<template name="LogoutView">
+	<div class="jumbotron ">
+		<div class="container">
+			<div class="pull-left">
+				<h2 id="component-title">
+					Sign In
+				</h2>
+				<p id="jumbotron-text">
+					Users can only see and enter data once they are logged in. <br />Please sign in down below.
+				</p>
+				<ul class="nav navbar-nav navbar-left">
+		        	{{> loginButtons}}
+		    	</ul>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="Accounts101">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div id="accounts-wrapper" class="animated fadeInUp">
+                    <header>
+                        <div class="brand">
+                            <a href="index.html" class="logo">
+                                <i class="icon-anchor"></i>
+                                Ship Sharing    
+                            </a>
+                        </div>
+                    </header>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">     
+                           Sign In
+                        </h3>
+                        </div>
+                        <div class="panel-body">
+                            <p> Login to access your account.</p>
+
+                            {{> loginButtons}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</template>
+
+
+<!--
+<template name="SignedOutView">
+	<div id="dataview" class="">
+		<h2 id="component-title">
+			Sign In
+		</h2>
+		<p id="jumbotron-text">
+			Users can only see and enter data once they are logged in. <br />Please sign in down below.
+		</p>
+		<ul class="nav navbar-nav navbar-left">
+        	{{> loginButtons}}
+    	</ul>
+	</div>
+</template>
+-->
